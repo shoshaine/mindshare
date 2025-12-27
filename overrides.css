@@ -1,0 +1,312 @@
+/* overrides.css - small fixes for exported Tilda CSS mismatches */
+
+/* Remove any unexpected page-level borders/outlines and force dark background */
+html, body, .t-8zf, .t-mrg, .t39-zfi {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: #12051c !important;
+  color: #ffffff !important;
+}
+
+/* Ensure divs used as blocks don't get accidental borders */
+.t39-zfi div, .t39-njm div, .t39-zfi, .t39-njm {
+  border: none !important;
+}
+
+/* Map important button/link styles from rec-pok to rec-mi1 and rec-5j5 so exported selectors apply */
+#rec-mi1 .tn-kdm[data-elem-id="1758112915116"],
+#rec-mi1 .tn-kdm[data-elem-id="175811294354274390"],
+#rec-mi1 .tn-kdm[data-elem-id="1758113052053"],
+#rec-5j5 .tn-kdm[data-elem-id="1758112915116"],
+#rec-5j5 .tn-kdm[data-elem-id="175811294354274390"],
+#rec-5j5 .tn-kdm[data-elem-id="1758113052053"] {
+  /* center buttons horizontally */
+  text-align: center;
+}
+
+#rec-mi1 .tn-kdm[data-elem-id="1758112915116"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="1758112915116"] .tn-ypq {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Courier New', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #4a1a6c;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  display: inline-block;
+  padding: 10px 14px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#rec-mi1 .tn-kdm[data-elem-id="175811294354274390"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="175811294354274390"] .tn-ypq {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Courier New', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #4a1a6c;
+  border-color: transparent;
+  border-style: solid;
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#rec-mi1 .tn-kdm[data-elem-id="1758113052053"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="1758113052053"] .tn-ypq {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Courier New', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #4a1a6c;
+  border-color: transparent;
+  border-style: solid;
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Ensure contract address text uses exported styles */
+#rec-mi1 .tn-kdm[data-elem-id="1758113142460"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="1758113142460"] .tn-ypq {
+  vertical-align: middle;
+  color: #bca5d1;
+  font-size: 20px;
+  font-family: 'Courier New', Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* Small helper: make sure anchors look clickable */
+a.tn-ypq, .tn-1e9 {
+  cursor: pointer;
+}
+
+/* Make the shill textarea fill the exported block area and inherit text styles */
+#style-SSZSa.style-SSZSa {
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  background: transparent;
+  color: #ffffff !important; /* force input text to white */
+  border: none;
+  outline: none;
+  resize: vertical;
+  font: inherit;
+}
+
+/* Placeholder styling (lighter than the input text) */
+#style-SSZSa::placeholder,
+#style-SSZSa.style-SSZSa::placeholder,
+textarea#style-SSZSa::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+/* WebKit */
+textarea#style-SSZSa::-webkit-input-placeholder { color: rgba(255,255,255,0.6); }
+/* Mozilla Firefox */
+textarea#style-SSZSa::-moz-placeholder { color: rgba(255,255,255,0.6); opacity: 1; }
+/* MS Edge */
+textarea#style-SSZSa:-ms-input-placeholder { color: rgba(255,255,255,0.6); }
+textarea#style-SSZSa::-ms-input-placeholder { color: rgba(255,255,255,0.6); }
+
+/* Post button: when enabled, make it visually green like hover */
+#style-tYIG1.enabled .tn-ypq {
+  background: #d946ef !important; /* match Next button green (rgb(137,216,61)) */
+  color: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(217,70,239,0.12) inset;
+}
+#style-tYIG1.enabled {
+  cursor: pointer;
+}
+
+/* small flash when clicking disabled Post */
+.t39-pxe.disabled-flash { transform: scale(0.98); transition: transform 140ms ease; }
+
+/* focus state for textarea to make it visible to users */
+#style-SSZSa.style-SSZSa:focus {
+  outline: 2px solid rgba(217,70,239,0.12);
+}
+
+/* Make the in-place tweet replace the image and fit a larger, left-aligned framed area */
+/* Make the embed wrapper match the background container's width and align to it */
+/* Make the embed wrapper match the background card width and stay inside its column */
+/* Restore the original positioned card dimensions so the embed sits where the Tilda layout expects it.
+   This undoes the 'full-width' change which caused the widget to float in the wrong place. */
+/* Position the embed inside the middle (Engage) column so it sits above the Engage copy */
+#style-afYwW {
+  position: absolute !important;
+  left: 141px !important; /* align with Engage column */
+  top: 652px !important;  /* place above the 'engage with this post' copy */
+  width: 241px !important;
+  height: 287px !important;
+  box-sizing: border-box;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* In-place tweet should flow inside the wrapper and fill its width */
+#style-q7ez3 {
+  padding: 0;
+  width: 241px !important;
+  height: 287px !important;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute !important;
+  top: 0; left: 0;
+  border-radius: 12px !important;
+  background: transparent !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+  padding: 8px !important;
+}
+
+#style-q7ez3 .twitter-tweet {
+  margin: 0 !important;
+}
+
+/* The widget iframe is sized to fit inside the framed area (allowing a small inner gutter)
+   and we remove scaling so content appears crisp. */
+#style-q7ez3 iframe {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 217px !important;
+  height: 287px !important;
+  transform: none !important;
+  transform-origin: top center !important;
+  border-radius: 10px !important;
+}
+
+/* If widget injects multiple stacked tweets, crop overflow so only the framed area shows */
+#style-afYwW, #style-q7ez3 {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Also ensure any inner block elements don't add extra spacing */
+#style-q7ez3 .twitter-tweet > p { margin: 0 !important; }
+
+/* Static tweet card used by engage.js to guarantee exact placement */
+.static-tweet {
+  width: 217px !important;
+  height: 287px !important;
+  box-sizing: border-box;
+  background: #1e102e; /* dark card similar to X dark */
+  color: #eaddff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.static-tweet .st-header { display:flex; align-items:center; }
+.static-tweet .st-avatar { width:36px; height:36px; border-radius:50%; object-fit:cover; margin-right:10px; }
+.static-tweet .st-meta { font-size:13px; color:#d0bcff; }
+.static-tweet .st-name { font-weight:700; margin-right:6px; }
+.static-tweet .st-handle { color:#9f86c6; font-weight:400; }
+.static-tweet .st-x { margin-left:auto; color:#d0bcff; font-size:16px; opacity:0.9; }
+.static-tweet .st-body { margin-top:8px; font-size:13px; line-height:1.45; color:#f3e7ff; max-height:170px; overflow:hidden; }
+.static-tweet .st-body p { margin:6px 0; }
+.static-tweet .st-footer { position:absolute; bottom:10px; left:12px; right:12px; font-size:11px; color:#9f86c6; }
+
+/* Place the live twitter widget inside the tn-ypq div and size it relative to that div.
+   Center horizontally and align to the top of the container. Widget will be 90% width
+   and 70% height of the containing `#style-q7ez3` block. */
+#style-q7ez3 {
+  display: flex !important;
+  justify-content: center !important; /* center horizontally */
+  align-items: flex-start !important; /* align to top */
+}
+#style-q7ez3 .twitter-tweet,
+#style-q7ez3 iframe {
+  width: 80% !important;
+  height: 70% !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Center decorative / spacer blocks (.t39-85b). This covers both normal flow
+   blocks and absolutely-positioned ones: use margin auto for flow, and left/transform
+   centering for positioned elements. Scoped broadly to avoid layout regressions. */
+.t39-85b {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* If the element is absolutely positioned in the exported layout, center it by
+   moving its origin to 50% and translating back. This won't harm non-positioned elements. */
+.t39-85b {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Reduce header/logo images by 50% to make them less dominant */
+/* Reduce header/logo images by 50% but only for the header logo elements.
+   Avoid targeting generic classes so large main.png remains its original size. */
+#style-mnnzN img.tn-vbb,
+#style-VOwoD img.tn-lqb {
+  width: 50% !important;
+  height: auto !important;
+  max-width: none !important;
+  display: inline-block !important;
+}
+
+/* Center filter decorative element used across sections (.filter-18z)
+   Support both flow and absolutely-positioned cases with margin auto and
+   left/transform centering. Scoped to the filter class name exported by Tilda. */
+.filter-18z {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+
+/* Center the entire rec-5j5 block contents */
+#rec-5j5 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important; /* fallback for inner text */
+}
+
+/* Also keep the t39-zfi centering in case nested structure requires it */
+#rec-5j5 .t39-zfi {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important; /* horizontal centering */
+  justify-content: center !important;
+}
+
+/* Ensure contract address text and link buttons are centered and spaced */
+#rec-5j5 .tn-kdm[data-elem-id="1758113142460"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="1758112915116"] .tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="175811294354274390"] .tn-ypq {
+  text-align: center !important;
+  margin: 6px 0 !important;
+  display: inline-block !important;
+}
+
+/* If the social links are anchors, ensure they appear inline and centered */
+#rec-5j5 .tn-kdm[data-elem-id="1758112915116"] a.tn-ypq,
+#rec-5j5 .tn-kdm[data-elem-id="175811294354274390"] a.tn-ypq {
+  display: inline-block !important;
+  text-align: center !important;
+}
