@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function setIndicator(pathEl, ok) {
     if (!pathEl) return;
     try {
-      pathEl.setAttribute('fill', ok ? '#00ff2f' : '#ff0000');
+      pathEl.setAttribute('fill', ok ? '#d946ef' : '#ff0055');
     } catch (e) {
       // ignore
     }
