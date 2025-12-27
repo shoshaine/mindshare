@@ -66,17 +66,17 @@ div.t-8zf {
 
 #rec-d77 .t39-njm  { 
     height: 110px; 
-    background-color: #000000;
+    background-color: #12051c;
 } 
 
 #rec-cri .t39-njm  { 
     height: 780px; 
-    background-color: #000000;
+    background-color: #12051c;
 } 
 
 #rec-ca6 .t39-njm  { 
     height: 360px; 
-    background-color: #000000;
+    background-color: #12051c;
 } 
 
 @media all{ 
@@ -275,16 +275,16 @@ div.t-8zf {
     font-weight: 600; 
     border-width: 2px; 
     border-radius: 10px 10px 10px 10px; 
-    background-color: #141e09; 
+    background-color: #2e1065; 
     background-position: center center; 
-    border-color: #4c7717; 
+    border-color: #d946ef; 
     border-style: solid; 
     transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
 } 
 
 @media (hover), (min-width:0\0){ 
   #rec-d77 .tn-8m7[data-elem-id="1758110169972"] .tn-1e9:hover { 
-    background-color: #4c7717; 
+    background-color: #d946ef; 
     background-image: none;
   } 
 }     
@@ -304,16 +304,16 @@ div.t-8zf {
     font-weight: 600; 
     border-width: 2px; 
     border-radius: 10px 10px 10px 10px; 
-    background-color: #141e09; 
+    background-color: #2e1065; 
     background-position: center center; 
-    border-color: #4c7717; 
+    border-color: #d946ef; 
     border-style: solid; 
     transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out,border-color 0.2s ease-in-out;
 } 
 
 @media (hover), (min-width:0\0){ 
   #rec-cri .tn-8m7[data-elem-id="1758116405714"] .tn-1e9:hover { 
-    background-color: #4c7717; 
+    background-color: #d946ef; 
     background-image: none;
   } 
 }     
@@ -325,7 +325,7 @@ div.t-8zf {
     line-height: 1.55; 
     font-weight: 600; 
     border-radius: 10px 10px 10px 10px; 
-    background-color: #292d24; 
+    background-color: #2e1065; 
     background-position: center center; 
     border-color: transparent; 
     border-style: solid; 
@@ -334,7 +334,7 @@ div.t-8zf {
 
 @media (hover), (min-width:0\0){ 
   #rec-ca6 .tn-8m7[data-elem-id="1758112915116"] .tn-1e9:hover { 
-    background-color: #568426; 
+    background-color: #d946ef; 
     background-image: none;
   } 
 }     
@@ -346,7 +346,7 @@ div.t-8zf {
     line-height: 1.55; 
     font-weight: 600; 
     border-radius: 10px 10px 10px 10px; 
-    background-color: #292d24; 
+    background-color: #2e1065; 
     background-position: center center; 
     border-color: transparent; 
     border-style: solid; 
@@ -355,7 +355,7 @@ div.t-8zf {
 
 @media (hover), (min-width:0\0){ 
   #rec-ca6 .tn-8m7[data-elem-id="175811294354274390"] .tn-1e9:hover { 
-    background-color: #568426; 
+    background-color: #d946ef; 
     background-image: none;
   } 
 }     
@@ -367,7 +367,7 @@ div.t-8zf {
     line-height: 1.55; 
     font-weight: 600; 
     border-radius: 10px 10px 10px 10px; 
-    background-color: #292d24; 
+    background-color: #2e1065; 
     background-position: center center; 
     border-color: transparent; 
     border-style: solid; 
@@ -376,7 +376,7 @@ div.t-8zf {
 
 @media (hover), (min-width:0\0){ 
   #rec-ca6 .tn-8m7[data-elem-id="1758113052053"] .tn-1e9:hover { 
-    background-color: #568426; 
+    background-color: #d946ef; 
     background-image: none;
   } 
 }     
